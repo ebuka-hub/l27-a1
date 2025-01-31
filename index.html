@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+     <body>
+        <center>
+            <h2>Javascript Array-- Sort and Reverse</h2>
+            <p>Click the buttons to Sort and Reverse the Array.</p>
+
+            <button onclick="sortfunction()">Sort me</button>
+            <br>
+            <br>
+            <button onclick="reversefunction()">Reverse me</button>
+
+            <P id="result"></P>
+
+            <script>
+
+                var colours = ["yellow" , "pink" , "Blue" , "Red"];
+
+                document.getElementById("result").innerHTML = colours;
+                function sortfunction() {
+
+                    colours.sort();
+                    document.getElementById("result").innerHTML = colours;
+
+                }
+                function reversefunction() {
+
+                    colours.reverse();
+                    document.getElementById("result").innerHTML = colours;
+                }
+            </script>
+        </center>
+     </body>
+</html>
